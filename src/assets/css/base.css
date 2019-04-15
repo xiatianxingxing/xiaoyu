@@ -1,0 +1,153 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0
+}
+
+button, html input[type=button], input[type=submit] {
+  -webkit-apperance: button;
+  cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+  cursor: default
+}
+
+ol, ul {
+  list-style: none
+}
+
+img {
+  border: 0;
+  vertical-align: middle
+}
+
+em, i, u {
+  font-style: normal
+}
+
+.fl {
+  float: left
+}
+
+
+.fr {
+  float: right
+}
+
+.al {
+  text-align: left
+}
+
+.ac {
+  text-align: center
+}
+
+.ar {
+  text-align: right
+}
+
+.hide {
+  display: none
+}
+
+.clear, .clr {
+  display: block;
+  overflow: hidden;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+.clearfix {
+  *zoom: 1
+}
+
+.dorpdown {
+  position: relative
+}
+
+.dorpdown-layer {
+  display: none;
+  position: absolute
+}
+
+.dorpdown:hover .dorpdown-layer, .hover .dorpdown-layer {
+  display: block
+}
+
+.cw-icon {
+  position: relative;
+  cursor: default;
+  zoom: 1
+}
+
+.cw-icon .i, .cw-icon i {
+  display: block;
+  position: absolute;
+  overflow: hidden
+}
+
+
+
+body {
+  font: 16px/150% Arial, Verdana, "\5b8b\4f53";
+  color: #666;
+  background: #fff;
+  height: 100vh;
+}
+
+a {
+  color: #666;
+  text-decoration: none
+}
+
+a:hover {
+  color: #00b7b5;
+}
+/* 图片填充 */
+.img{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img1{
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.z_blue{
+  color: #3385ff;
+}
+.b_blue{
+  background-color: #3385ff;
+}
+/* header */
+.mint-header{
+  background-color: #fff;
+  color: #333;
+   box-shadow: 1px 0px 2px #dedede;
+}
+/* 背景颜色 */
+.dong{
+  background-color: #f1f1f1;
+}
+
+

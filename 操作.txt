@@ -1,0 +1,39 @@
+npm install --global vue-cli  (cnpm 也可以)
+
+vue init webpack demo  (webpack创建 项目名称)
+
+进入项目下载依赖   npm install
+
+然后启动   npm run dev
+
+
+使用 mint-ui
+npm i mint-ui -S
+import Mint from 'mint-ui'
+Vue.use(Mint)
+
+
+使用全局样式
+// 引入全局样式 @是src文件下
+import "@/assets/css/base.css"
+
+
+使用 element-ui
+npm i element-ui -S
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
+
+
+使用less  如果报错可能是 css-loader和style-loader没下载
+cnpm install less less-loader --save-dev
+修改 webpack.config.js (webpack.base.conf.js)文件，配置loader加载依赖，让其支持外部的less,在原来的代码上添加
+{
+ test: /\.less$/,
+ loader: "style-loader!css-loader!less-loader",
+ },
+
+
+使用animate.css
+npm install animate.css --save
+import animate from 'animate.css'
