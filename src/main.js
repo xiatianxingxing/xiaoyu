@@ -35,8 +35,8 @@ export var ev = new Vue()
 import animate from 'animate.css';
 
 // 引入全局样式
+
 import "@/assets/css/base.css"
-//import "@/assets/css/style.css"
 
 
 /* eslint-disable no-new */

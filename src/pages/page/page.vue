@@ -57,7 +57,7 @@ export default {
     height: 50px;
     overflow: hidden;
     display: flex;
-
+    background-color: rgba(255,255,255,0.6);
   }
   .foot_nav{
     flex:1;

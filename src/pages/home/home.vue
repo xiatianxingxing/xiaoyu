@@ -13,7 +13,7 @@
     </header>
     <div class="header_nav">
       <ul>
-        <li class="h_li fl" v-for="(nav,index) in  nav_mes" :class="index%4 == 0? 'lb_0':''">
+        <li class="h_li fl" v-for="(nav,index) in  nav_mes" :key="index" :class="index%4 == 0? 'lb_0':''">
           <router-link  :to="nav.pageUrl">
             <i class="h_nav_pic">
               <img :src="nav.url" alt="">
@@ -109,6 +109,7 @@ export default {
 </script>
 
 <style scoped lang="less">
+  @bgcColor: rgba(255,255,255,0.6);
   /* 轮播 */
   .banner{
     width: 100%;
@@ -134,7 +135,7 @@ export default {
         box-sizing: border-box;
         border-left: 1px solid #f1f1f1;
         border-bottom: 1px solid #f1f1f1;
-        color: #fff;
+        background-color:  @bgcColor;
 
         a{
           display: block;

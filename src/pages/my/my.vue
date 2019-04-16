@@ -37,7 +37,8 @@
 </script>
 
 <style scoped lang="less">
-  @bgcColor:rgba(255,255,255,0.8);
+  @bgcColor: rgba(255,255,255,0.6);
+
   .my_header{
     padding: 0.1rem;
     background-color: @bgcColor;
@@ -45,7 +46,7 @@
       width: 0.8rem;
       height: 0.8rem;
       border-radius: 50%;
-      border: 2px solid #f5fffa;
+      border: 2px solid #dcc0ff;
       margin: 0 auto;
       background-image: url(/static/img/user.jpg);
     }

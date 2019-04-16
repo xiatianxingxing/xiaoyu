@@ -2,7 +2,7 @@
     <div class="dong">
       <div class="header_nav">
         <ul>
-          <li class="h_li fl" v-for="(nav,index) in  nav_mes" :class="index%4 == 0? 'lb_0':''">
+          <li class="h_li fl" v-for="(nav,index) in  nav_mes" :key="index" :class="index%4 == 0? 'lb_0':''">
             <a href="javascript:;">
               <i class="h_nav_pic">
                 <img :src="nav.url" alt="">
@@ -63,6 +63,7 @@
 </script>
 
 <style scoped lang="less">
+  @bgcColor: rgba(255,255,255,0.6);
   .header_nav{
 
     ul{
@@ -72,7 +73,8 @@
         box-sizing: border-box;
         border-left: 1px solid #f1f1f1;
         border-bottom: 1px solid #f1f1f1;
-        color: #fff;
+        background-color: @bgcColor;
+
         a{
           display: block;
         }
