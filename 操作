@@ -37,3 +37,11 @@ cnpm install less less-loader --save-dev
 使用animate.css
 npm install animate.css --save
 import animate from 'animate.css'
+
+
+使用 hbuilder 打包
+首先建立app项目 导入项目
+把项目设置成app项目
+
+发行--> 发行为原生安装包
+打包成功后查看打包状态

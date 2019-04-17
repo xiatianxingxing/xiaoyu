@@ -1,10 +1,10 @@
 <template>
     <div class="dong">
       <header-top :title="title"></header-top>
-      <div>
-        <el-col :span="6" class="photo_list" v-for="item in 12">
+      <div class="dong_body">
+        <el-col :span="6" class="photo_list" v-for="(item,index) in 12" :key="index">
           <div class="list_box">
-
+            {{item}}
           </div>
         </el-col>
       </div>

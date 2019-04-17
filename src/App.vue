@@ -1,12 +1,20 @@
 <template>
-  <div id="app">
+  <div id="app" class="img" :style="{'backgroundImage':'url('+url+')'}">
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      url:''
+    }
+  },
+  beforeUpdate(){
+    this.url = this.$store.state.xiaoyuUrl
+  }
 }
 </script>
 

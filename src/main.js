@@ -40,6 +40,9 @@ import "@/assets/css/base.css"
 
 
 /* eslint-disable no-new */
+
+
+Vue.prototype.$store = store
 new Vue({
   el: '#app',
   router,

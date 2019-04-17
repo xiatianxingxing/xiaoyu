@@ -5,19 +5,19 @@
           <router-view></router-view>
         </div>
         <footer class="footer">
-          <router-link class="foot_nav" :class="pageNum == 0? 'avtive':''" @click.native="pageNum='0'" to="/">
+          <router-link class="foot_nav" :class="pageNum == 0? 'avtive':''" @click.native="pageNav('0')" to="/">
             <div>
               <i class="home_icon img1 nav_pic"></i>
             </div>
             <p class="title">首页</p>
           </router-link>
-          <router-link class="foot_nav" :class="pageNum == 1? 'avtive':''"  @click.native="pageNum='1'" to="/love">
+          <router-link class="foot_nav" :class="pageNum == 1? 'avtive':''"  @click.native="pageNav('1')" to="/love">
             <div>
               <i class="love_icon img1 nav_pic"></i>
             </div>
             <p class="title">喜欢</p>
           </router-link>
-          <router-link class="foot_nav" :class="pageNum == 2? 'avtive':''" @click.native="pageNum='2'" to="/my">
+          <router-link class="foot_nav" :class="pageNum == 2? 'avtive':''" @click.native="pageNav('2')" to="/my">
             <div>
               <i class="my_icon img1 nav_pic"></i>
             </div>
@@ -33,11 +33,16 @@ export default {
   data () {
     return {
       title : "我是标题" ,
-      pageNum: 0,
+      pageNum: this.$store.state.pageNum,
       url:this.$store.state.xiaoyuUrl
     }
   },
-  methods: {},
+  methods: {
+    pageNav(num){
+      this.$store.commit("pageNav",num);
+      this.pageNum = this.$store.state.pageNum;
+    }
+  },
   mounted () {
 
   }

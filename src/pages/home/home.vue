@@ -58,7 +58,7 @@ export default {
       ],
       nav_mes:[
         {
-          title:"zongjie",
+          title:"总结",
           url:"./static/img/nav1.png",
           pageUrl:"home/zongjie"
         },

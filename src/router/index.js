@@ -4,6 +4,8 @@ import page from '@/pages/page/page.vue'; // page
 
 /* 首页 */
 import home from '@/pages/home/home.vue';
+import zongjie from '@/pages/home/zongjie/home_zj.vue';
+import suanfa from '@/pages/home/zongjie/suanfa.vue';
 
 
 /* 喜欢 */
@@ -24,7 +26,7 @@ export default new Router({
       path: '/',
       name: 'page',
       component: page,
-      children:[
+      children: [
         {
           path: '',
           name: 'home',
@@ -42,19 +44,30 @@ export default new Router({
         }
       ]
     },
-
-
-    /* 我的 */
+    /* ------------------home------------- */
+    /* 总结 */
+    {
+      path: '/home/zongjie',
+      name: 'zongjie',
+      component: zongjie
+    },
+    /* 算法 */
+    {
+      path: '/home/zongjie/suanfa',
+      name: 'suanfa',
+      component: suanfa
+    },
+    /* -------------------我的------------- */
     /* 相册 */
     {
-      path: "/my/photo",
-      name: "photo",
+      path: '/my/photo',
+      name: 'photo',
       component: photo
     },
     /* 背景 */
     {
-      path: "/my/background",
-      name: "background",
+      path: '/my/background',
+      name: 'background',
       component: bgc
     },
   ]
