@@ -64,9 +64,9 @@ export default {
         },
 
         {
-          title:"蛋糕",
+          title:"css3",
           url:"./static/img/nav2.png",
-          pageUrl:"/"
+          pageUrl:"home/css3"
         },
         {
           title:"果冻",

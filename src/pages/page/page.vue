@@ -1,6 +1,6 @@
 <template>
     <div id="xiaoyu" class="img"
-    :style="{'backgroundImage':'url('+url+')'}">
+   >
         <div>
           <router-view></router-view>
         </div>
@@ -34,7 +34,7 @@ export default {
     return {
       title : "我是标题" ,
       pageNum: this.$store.state.pageNum,
-      url:this.$store.state.xiaoyuUrl
+
     }
   },
   methods: {

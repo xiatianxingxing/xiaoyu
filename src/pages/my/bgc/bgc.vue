@@ -59,7 +59,7 @@
         </div>
         <span slot="footer" class="dialog-footer">
           <el-button size="mini" class="btn_style" @click="removeColor()">取 消</el-button>
-          <el-button size="mini" class="btn_style" type="primary" @click="zidingyi">确 定</el-button>
+          <el-button size="mini" class="btn_style" type="primary" @click="zidingyi()">确 定</el-button>
         </span>
       </el-dialog>
     </div>
@@ -129,6 +129,7 @@
       },
       // 确认提交
       zidingyi(){
+        console.log(this.$refs.colorShow.style.background)
 
       },
       // 去掉颜色

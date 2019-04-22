@@ -21,6 +21,8 @@
         title:"总结",
         dataMsg:[
           {name:"简单算法和面试题",url:"/home/zongjie/suanfa"},
+          {name:"字符串方法",url:"/home/zongjie/string"},
+          {name:"数组的方法",url:"/home/zongjie/array"},
         ]
       }
     },

@@ -76,58 +76,23 @@
             </div>
           </div>
           <div class="sf_area">
-            <a name="a2">乱序排序法</a>
+            <a name="a2">url处理</a>
             <div>
               <h4>方法1</h4>
               <pre class="pre_code">
                 <code>
-                  var b =[];
-                    for(var i=0;i<a.length;i++){
-                      if(b.indexOf(a[i]) == -1){
-                        b.push(a[i])
-                      }
-                    }
-                </code>
-              </pre>
-            </div>
-            <div>
-              <h4>方法2</h4>
-              <pre class="pre_code">
-                <code>
-                  var b = [];
-                  var c = {};
-                  for(var i=0;i<a.length;i++){
-                      //判断c对象有没有这个键  有为true  没有为false
-                      //若没有 取反  为b[]添加数据
-                      if(!c[a[i]]){
-                          b.push(a[i]);
-                          //再把c[a[i]这个键设为true  因为上面要取反
-                          c[a[i]] = true
-                      }
+                  let urlSar = url.split("?")[1]
+                  let urlArr = urlSar.split("&");
+                  let urlObj = {};
+                  for(let i = 0;  i< urlArr.length; i++){
+                      let u = urlArr[i].split("=");
+                      urlObj[u[0]] = u[1];
                   }
-                  console.log(b);
+                  console.log(urlObj);
                 </code>
               </pre>
             </div>
-            <div>
-              <h4>方法3</h4>
-              <pre class="pre_code">
-                <code>
-                  //先排列数组 从大到小
-                  var a1 = a.sort();
-                  console.log(a1);
-                  // 把a1的第一个 值 付给b数组
-                  var b = [a1[0]];
-                  for(var i=0;i<a1.length;i++){
-                      //判断 b里面有没有这个值  以为是从小到大排序，所以不要担心漏掉一个
-                      if(a1[i] !== b[b.length-1]){
-                          b.push(a1[i])
-                      }
-                  }
-                  console.log(b);
-                </code>
-              </pre>
-            </div>
+
           </div>
         </div>
       </main>
@@ -208,6 +173,7 @@
   }
   .pre_code{
     overflow: auto;
+    font-size: 0.12rem;
   }
   .sf_area{
     background-color: @bgcColor;
